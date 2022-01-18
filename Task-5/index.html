@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <title>Assignment-5</title>
     <style>
         * {
@@ -14,7 +17,7 @@
         }
 
         body {
-            font-family: 'Source Serif Pro';
+            font-family: 'Source Serif Pro', serif;
         }
 
         .resume-mocup {
@@ -45,6 +48,16 @@
 
         .text-right {
             text-align: right;
+        }
+        .title{
+            text-transform: uppercase;
+        }
+        .title h1{
+            margin-bottom: 10px;
+        }
+        .subtitle{
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         .wd-100 {
@@ -83,13 +96,6 @@
         td {
             padding: 20px 0px;
         }
-
-        h2 {
-            margin-top: 0px;
-            margin-bottom: 5px;
-            font-size: 18px;
-        }
-
         .padding-none td {
             padding: 1px 0px;
             width: 33%;
@@ -98,11 +104,6 @@
         a.red {
             color: red;
             font-weight: 600;
-        }
-
-        h1 {
-            margin-top: 0px;
-            margin-bottom: 10px;
         }
 
         table.footer-content {
@@ -116,7 +117,7 @@
     <section class="resume-mocup">
         <table class="text-left wd-100">
             <tr class="border">
-                <th style="text-transform: uppercase;">
+                <th class="title">
                     <h1>jonathan doe</h1>
                     <p><i>web designer, director</i></p>
                 </th>
@@ -143,17 +144,17 @@
                     <table class="inner-table">
                         <tr>
                             <td>
-                                <h2>Web Design</h2>
+                                <h2 class="subtitle">Web Design</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos labore ullam
                                 </p>
                             </td>
                             <td>
-                                <h2>Interface Design</h2>
+                                <h2 class="subtitle">Interface Design</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos labore ullam
                                 </p>
                             </td>
                             <td>
-                                <h2>Project Direction</h2>
+                                <h2 class="subtitle">Project Direction</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos labore ullam
                                 </p>
                             </td>
@@ -192,7 +193,7 @@
                     <table>
                         <tr class="border">
                             <td>
-                                <h2>Facebook</h2>
+                                <h2 class="subtitle">Facebook</h2>
                                 <p>Senior Interface Deigner</p>
                                 <p class="mt-10">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis hic eius
@@ -205,7 +206,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h2>Apple Inc.</h2>
+                                <h2 class="subtitle">Apple Inc.</h2>
                                 <p>Senior Interface Deigner</p>
                                 <p class="mt-10">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis hic eius
@@ -222,7 +223,7 @@
             <tr class="border">
                 <td class="vertical-top"><i>Education</i></td>
                 <td>
-                    <h2>Indiana University</h2>
+                    <h2 class="subtitle">Indiana University</h2>
                     <p>Dual Major - <span style="font-weight: 600;">4.0 GPA</span></p>
                 </td>
             </tr>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,52 +10,63 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Flex assignmment</title>
 </head>
+
 <body>
+    <!-- start: wrapper -->
     <div class="wrapper d-flex w-100 h-100 ">
+        
+        <!-- start:sidebar -->
         <aside class="sidebar">
             <div class="logo d-flex align-center">
                 <span class="icon-dice"></span>
                 <h1>POLKA</h1>
             </div>
-            <div class="content d-flex colum">
+            <nav class="content d-flex colum">
                 <ul class="first">
-                    <li class="active">
+                    <li class="active nav-list">
                         <a href="#"><span class="icon-account_circle"></span>Meetings</a>
                     </li>
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-calendar-o"></span>Calander</a>
                     </li>
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-compare_arrows"></span>Compare</a>
                     </li>
                 </ul>
                 <ul class="second">
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-account_circle"></span>Account</a>
                     </li>
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-question-circle-o"></span>Faq</a>
                     </li>
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-product-hunt"></span>Product</a>
                     </li>
-                    <li>
+                    <li class="nav-list">
                         <a href="#"><span class="icon-shield"></span>Security</a>
                     </li>
-                    <li><a href="#"><span class="icon-logout"></span>Sign out</a></li>
+                    <li class="nav-list">
+                        <a href="#"><span class="icon-logout"></span>Sign out</a>
+                    </li>
                 </ul>
-
-            </div>
-            
+            </nav>
         </aside>
+        <!-- start:sidebar -->
+
+        <!-- start:main -->
         <div class="main">
-            <header class="d-flex d-header">
-                <input class="header-search" type="search" name="search" id="search" placeholder="enter a keyword here"><span class="lnr lnr-magnifier"></span>
+            <header class="d-flex main-header">
+                <input class="header-search" type="search" name="search" id="search"
+                    placeholder="enter a keyword here"><span class="icon-search"></span>
                 <button class="meeting-btn"> upload a meeting</button>
             </header>
         </div>
+        <!-- end:main -->
 
+    </div>
+    <!-- end: wrapper -->
 
-    </div>    
 </body>
+
 </html>

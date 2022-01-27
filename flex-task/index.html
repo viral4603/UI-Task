@@ -14,7 +14,7 @@
 <body>
     <!-- start: wrapper -->
     <div class="wrapper d-flex w-100 h-100 ">
-        
+
         <!-- start:sidebar -->
         <aside class="sidebar">
             <div class="logo d-flex align-center">
@@ -56,11 +56,62 @@
 
         <!-- start:main -->
         <div class="main">
-            <header class="d-flex main-header">
+            <header class="d-flex main-header p-container border-bottom bg-primary">
                 <input class="header-search" type="search" name="search" id="search"
                     placeholder="Enter a keyword here"><span class="icon-search"></span>
                 <button class="meeting-btn"> Upload a meeting</button>
             </header>
+            <div class="main-2 d-flex space-beetwin p-container border-bottom align-center bg-secondary">
+                <div class="left">
+                    <h2>Meeting Vis & Occur</h2>
+                    <h5 class="meeting-details primary-color"><span class="hastag">#oneonones</span> <span
+                            class="date">20/08/2020</span><span class="time">1:15PM</span> </h5>
+                </div>
+                <div class="right primary-color">
+                    <button class="main-btn">pdf <span></span></button>
+                    <button class="main-btn">Copy Link <span></span></button>
+                    <button class="main-btn">Share <span></span></button>
+                    <button class="main-btn">Delete<span></span></button>
+                </div>
+            </div>
+            <div class="main-3 p-container border-bottom">
+                <h5 class="primary-color">Meeting duration: <span class="secondary-color">00:43:27</span><span
+                        class="user"> 7 participants</span> <span>1 recording</span> </h5>
+            </div>
+            <div class="tab-menu border-bottom bg-primary">
+                <label class="label-tab primary-color" for="recording">Recording</label>
+                <label class="label-tab primary-color" for="meeting">Meeting Perfomance</label>
+                <label class="label-tab primary-color" for="participants">Participants perfomance</label>
+            </div>
+            <div class="main-4 p-container border-bottom bg-primary">
+                <input type="radio" id="recording" name="tab-check" checked>
+                <div class="recording d-flex align-center">
+                    <span class="primary-color">BS SCORE</span>
+                    <h2>0.89</h2>
+                    <span class="primary-color">ENGAGEMENT</span>
+                    <h2>0.89</h2>
+                    <span class="primary-color">LOST CAPCITY</span>
+                    <h2>0.89</h2>
+                </div>
+                <input type="radio" id="meeting" name="tab-check">
+                <div class="meeting d-flex align-center">
+                    <span class="primary-color">BS SCORE</span>
+                    <h2>0.89</h2>
+                    <span class="primary-color">ENGAGEMENT</span>
+                    <h2>0.89</h2>
+                </div>
+                <div class="meeting d-flex align-center">
+                    <span class="primary-color">BS SCORE</span>
+                    <h2>0.89</h2>
+                    <span class="primary-color">ENGAGEMENT</span>
+                    <h2>0.89</h2>
+                </div>
+                <input type="radio" id="participants" name="tab-check">
+                <div class="participants d-flex align-center">
+                    <span class="primary-color">BS SCORE</span>
+                    <h2>0.89</h2>
+                </div>
+            </div>
         </div>
         <!-- end:main -->
 

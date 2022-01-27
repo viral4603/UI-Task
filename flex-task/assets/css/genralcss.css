@@ -16,3 +16,24 @@
 .content-center{
     justify-content: center;
 }
+.space-beetwin{
+    justify-content: space-between;
+}
+.primary-color{
+    color: #b3b3b3;
+}
+.secondary-color{
+    color: #000;
+}
+.p-container{
+    padding: 15px 100px 15px 40px;
+}
+.border-bottom{
+    border-bottom: 1px solid #0001;
+}
+.bg-primary{
+    background-color: #f8f8fa;
+}
+.bg-secondary{
+    background-color: #fcfbfe;
+}

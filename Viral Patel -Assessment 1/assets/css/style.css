@@ -1,0 +1,558 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitle {
+    letter-spacing: 0.1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.main-title, .main-heading {
+    font-family: 'Playfair Display', serif;
+}
+
+.main-heading {
+    font-size: 4rem;
+}
+
+.color-white {
+    color: #ffffff
+}
+
+.sub-title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #685f5f;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.pd-100 {
+    padding: 100px 0px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-bitween {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.navbar {
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* header css */
+.humberger-menu {
+    position: relative;
+    margin: auto;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.humberger-menu::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.humberger-menu::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+/* css:hero */
+.hero {
+    background-image: url('../images/hero-bg.jpeg');
+    filter: grayscale(0.5);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.hero .logo {
+    max-width: 300px;
+}
+
+.hero .main-heading {
+    padding: 90px 0px 20px 0px;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* tringle css */
+.triangle {
+    margin-top: 90px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 35px;
+    border-right-width: 35px;
+    border-top: 50px solid #ffffff;
+}
+
+/* about-us css */
+.about-content {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.about-content i {
+    font-weight: 600;
+}
+
+.about-details .about-detalis-content {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding: 0px 40px 15px 40px;
+}
+
+.about-us-details {
+    width: 100%;
+}
+
+.about-us-details .flex-items {
+    overflow: hidden;
+    width: 33.33%;
+    height: 635px;
+}
+
+.about-us-details .about-details {
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-details .read-more {
+    color: black;
+    letter-spacing: 0.2rem;
+    padding: 15px 0px 5px 0px;
+    border-bottom: 1px solid black;
+}
+
+.about-us-details .read-more a {
+    color: black;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+.events .event-details {
+    width: 28%;
+}
+
+.events .event-date {
+    font-size: 2.5rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 15px 60px;
+    margin-top: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    background-color: white;
+    border-radius: 0px;
+}
+
+/* menu-section css */
+.menu .menu-items {
+    width: 47%;
+}
+
+.menu .itmes {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 2.5rem;
+}
+
+/* portfolio display images */
+.portfolio {
+    height: 700px;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-items {
+    width: 50%;
+}
+
+.portfolio .portfolio-items-2 {
+    width: 50%;
+    flex-direction: column;
+}
+
+.portfolio .portfolio-1 {
+    height: 350px;
+    overflow: hidden;
+}
+
+.portfolio .portfoli-2 {
+    flex-direction: column;
+
+    height: 400px;
+    width: 50%;
+}
+
+/* counter css */
+.counter .calories-number {
+    padding: 20px 0px 10px 0px;
+}
+
+.counter .food-calories {
+    width: 25%;
+}
+
+.counter .counter-icon {
+    font-size: 3rem;
+}
+
+.counter .circle {
+    color: #ffffff;
+    height: 250px;
+    width: 250px;
+    background: black;
+    border-radius: 50%;
+}
+
+.counter .circle .sub-title {
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.contact-form .form-details {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form .input-field {
+    margin-bottom: 10px;
+}
+
+.contact-form .form-input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 12px 5px;
+    border: 1px solid #b3b3b3;
+    border-radius: 0px;
+}
+#checkbox{
+    margin-right: 5px;
+}
+.contact-form .form-btn {
+    margin-top: 0.5rem;
+    padding: 15px 30px;
+}
+
+/* footer css */
+.footer-content {
+    padding: 60px 0px;
+    color: #ffffff;
+    background-color: #333333;
+}
+.footer-wraper{
+    max-width: 500px;
+    margin: auto;
+}
+
+.foter-details {
+    font-size: 1rem;
+    margin-bottom: 70px;
+}
+
+.footer-content a {
+    text-decoration: underline;
+    color: #589fda;
+}
+
+
+
+/* responsive css */
+/* for big screen */
+
+
+@media only screen and (max-width: 1200px) {
+    .pd-100 {
+        padding: 80px 0px;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .about-details .about-detalis-content {
+        font-size: 1.5rem;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .about-us-details .flex-items {
+        width: 33.33%;
+        height: 400px;
+    }
+
+    .menu .itmes {
+        font-size: 0.9rem;
+    }
+
+    .counter .circle {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .pd-100 {
+        padding: 60px 0px;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .sub-title {
+        font-size: 0.9rem;
+    }
+    .hero .logo{
+        max-width: 250px;
+    }
+    .hero .main-heading {
+        padding: 70px 0px 20px 0px;
+        font-size: 3rem;
+    }
+
+    .hero .hero-content {
+        max-width: 600px;
+    }
+
+    .hero .triangle {
+        margin-top: 70px;
+    }
+
+    .about-us .about-content {
+        font-size: 2.3rem;
+    }
+
+    .about-details .about-detalis-content {
+        font-size: 1.3rem;
+    }
+
+    .about-us-details .flex-items {
+        width: 50%;
+        height: 400px;
+    }
+
+    .events .event-details {
+        width: 40%;
+    }
+
+    .events .event-details:last-child {
+        padding: 50px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 776px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .pd-100 {
+        padding: 40px 0px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 0.9rem;
+    }
+    .hero .logo{
+        max-width: 230px;
+    }
+
+    .hero .main-heading {
+        padding: 60px 0px 15px 0px;
+        font-size: 2.5rem;
+    }
+
+    .hero .hero-content {
+        max-width: 600px;
+    }
+
+    .hero .triangle {
+        margin-top: 50px;
+    }
+
+    .about-us .about-content {
+        font-size: 1.8rem;
+    }
+
+    .about-us-details .flex-items {
+        width: 100%;
+    }
+    .portfolio .portfolio-items{
+        width: 100%;
+    }
+    .portfolio{
+        height: 400px;
+    }
+  
+    .counter .food-calories{
+        padding-top: 20px;
+        width: 50%;
+    }
+    .counter .food-calories:last-child{
+        justify-content: center;
+    }
+    .counter .circle{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .pd-100 {
+        padding: 30px 0px;
+    }
+
+    .title {
+        font-size: 1.7rem;
+        padding-bottom: 30px;
+    }
+    .hero .logo{
+        max-width: 200px;
+    }
+
+    .hero .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero .hero-content {
+        max-width: 400px;
+    }
+
+    .hero .triangle {
+        margin-top: 50px;
+        border-left-width: 20px;
+        border-right-width: 20px;
+        border-top: 30px solid #ffffff;
+    }
+
+    .about-us .about-content {
+        font-size: 1.5rem;
+    }
+
+    .about-us-details .flex-items {
+        width: 100%;
+    }
+
+    .events .event-details {
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    .events .event-details:last-child {
+        padding: 0px;
+        width: 100%;
+
+    }
+    .menu .menu-items{
+        width: 100%;
+    }
+    .counter .food-calories{
+        padding-top: 20px;
+        width: 100%;
+    }
+    
+    .counter .circle{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-form .form-details{
+        max-width: 400px;
+    }
+}

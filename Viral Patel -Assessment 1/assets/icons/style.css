@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'app';
+  src:  url('fonts/app.eot?o4nke4');
+  src:  url('fonts/app.eot?o4nke4#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?o4nke4') format('truetype'),
+    url('fonts/app.woff?o4nke4') format('woff'),
+    url('fonts/app.svg?o4nke4#app') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-food:before {
+  content: "\e901";
+}
+.icon-lunch:before {
+  content: "\e901";
+}
+.icon-soup:before {
+  content: "\e901";
+}
+.icon-lunch_dining:before {
+  content: "\e902";
+}
+.icon-dinner:before {
+  content: "\e903";
+}

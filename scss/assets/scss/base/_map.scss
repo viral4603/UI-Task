@@ -1,0 +1,12 @@
+@each $name, $value in $theme-colors {
+    .text-#{$name} {
+      color: $value;
+    }
+  }
+
+@each $name,$value in $theme-colors {
+    .icon-#{$name}{
+      color: $value;
+      background-color: rgba($value,0.12);
+    }
+}

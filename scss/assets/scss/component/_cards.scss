@@ -1,0 +1,33 @@
+// Card styles goes here
+.card-wrapper{
+    width: $card-width;
+    padding: $card-inner-space;
+    background-color: $card-bg-color;
+
+    
+    //card-icons
+    .card-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $card-icon-font;
+        height: $card-icon-height;
+        width: $card-icon-width;
+        margin-bottom: $card-space-bottom;
+    }
+    //titl
+    .card-title{
+        font-size: $card-title;
+        color: $card-title-color;
+        font-weight: $card-title-weight;
+        margin-bottom: $card-margin-bottom;
+    }
+    .card-counter{
+        font-size: $card-counter-size;
+        font-weight: $card-counter-weight;
+        color: $card-counter-color;
+        margin-bottom: $card-counter-bottom;
+    }
+ 
+    
+}

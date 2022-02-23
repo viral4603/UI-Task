@@ -1,0 +1,58 @@
+// All the SCSS Variables goes here
+
+// Fonts
+$font-size-base: 1rem;
+$font-family: 'Josefin Sans', sans-serif;
+$font-bold: 500;
+$font-weight-normal:400;
+$title-size-base:2rem;
+
+//Radious
+$radius:0;
+$circle-radius:50%;
+
+//Header
+$header-height:80px;
+$header-padding:0rem 1.2rem;
+$icon-size:1.5rem;
+
+//Sidebar
+$sidebar-width:120px;
+$sidebar-items-padding:2rem 0rem;
+//Button
+$button-padding:0.5rem;
+$button-radious:$radius;
+$button-border:none;
+
+//Input Field
+$input-padding:$button-padding;
+$input-border:none;
+
+//avtar user profile
+$avtar-height:40px;
+$avtar-width:40px;
+
+//main-wrapper
+$main-wrapper-padding:2rem;
+
+//heading tittle
+$title-padding:$sidebar-items-padding;
+
+//card
+$card-width:23%;
+$card-inner-space:1rem;
+$card-icon-height:50px;
+$card-icon-width:50px;
+$card-space-bottom:1.2rem;
+$card-icon-font:$icon-size;
+
+$card-title:$font-size-base;
+$card-title-weight:$font-weight-normal;
+$card-margin-bottom:1rem;
+
+$card-counter-size:1.6rem;
+$card-counter-weight:$font-weight-normal;
+$card-counter-bottom:1rem;
+
+
+

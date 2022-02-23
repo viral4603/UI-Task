@@ -1,0 +1,12 @@
+//main content css
+
+.main-content{
+    background-color: $main-bg;
+    padding: $main-wrapper-padding;
+    .title{
+        font-size: $title-size-base;
+        font-weight:$font-bold;
+        color: $secondary;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,11 @@
+// Project base and component style import
+@import 'base/index';
+
+// Project Specific Components
+@import 'component/index';
+
+// Now other style import
+@import 'layout/index';
+
+//utilities fonts 
+@import 'utilities/index';

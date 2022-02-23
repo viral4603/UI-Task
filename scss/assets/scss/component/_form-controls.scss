@@ -1,0 +1,13 @@
+// Form controls styles goes here
+
+
+//input fields css
+.input{
+    padding: $input-padding;
+    border: $input-border;
+    background-color: $input-bg;
+    font-family: $font-family;
+    &:focus-visible{
+        outline: none;
+    }
+}

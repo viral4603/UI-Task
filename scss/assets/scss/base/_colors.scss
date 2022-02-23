@@ -1,0 +1,48 @@
+//theme colors
+$primary:#abb1bf;
+$secondary:#3f386c;
+$white:#ffffff;
+$success:#438ffe;
+$info:#83bdbe;
+$warning:#8bc38a;
+$danger:#fe764b;
+$tertiary:#f7f7f7;
+
+//bodycolor
+$body-color:$primary;
+
+//header
+$header-bg:$white;
+$brand-icon-color:$success;
+
+//main
+$main-bg:$tertiary;
+
+//button
+$button-color:$white;
+$button-bg-color:$success;
+
+//input
+$input-bg:$tertiary;
+
+//icons-color
+$icon-color:$primary;
+
+//card-colors
+$card-bg-color:$white;
+$card-title-color:$primary;
+
+//card-counter
+$card-counter-color:$secondary;
+
+//create object colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "white":$white,
+  "success":$success,
+  "info":$info,
+  "warning":$warning
+);
+
+

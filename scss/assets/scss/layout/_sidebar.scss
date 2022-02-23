@@ -1,0 +1,13 @@
+.sidebar{
+    flex-basis: $sidebar-width;
+    .nav-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $sidebar-items-padding;
+    }
+    .icons{
+        color: $icon-color;
+        font-size: $icon-size;
+    }
+}

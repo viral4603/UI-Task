@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: #abb1bf;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.colum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.horizontal-scroll {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.text-primary {
+  color: #abb1bf;
+}
+
+.text-secondary {
+  color: #3f386c;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-success {
+  color: #438ffe;
+}
+
+.text-info {
+  color: #83bdbe;
+}
+
+.text-warning {
+  color: #8bc38a;
+}
+
+.icon-primary {
+  color: #abb1bf;
+  background-color: rgba(171, 177, 191, 0.12);
+}
+
+.icon-secondary {
+  color: #3f386c;
+  background-color: rgba(63, 56, 108, 0.12);
+}
+
+.icon-white {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.icon-success {
+  color: #438ffe;
+  background-color: rgba(67, 143, 254, 0.12);
+}
+
+.icon-info {
+  color: #83bdbe;
+  background-color: rgba(131, 189, 190, 0.12);
+}
+
+.icon-warning {
+  color: #8bc38a;
+  background-color: rgba(139, 195, 138, 0.12);
+}
+
+.button {
+  color: #ffffff;
+  background-color: #438ffe;
+  padding: 0.5rem;
+  border-radius: 0;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input {
+  padding: 0.5rem;
+  border: none;
+  background-color: #f7f7f7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.card-wrapper {
+  width: 23%;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.card-wrapper .card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1.2rem;
+}
+
+.card-wrapper .card-title {
+  font-size: 1rem;
+  color: #abb1bf;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card-wrapper .card-counter {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #3f386c;
+  margin-bottom: 1rem;
+}
+
+.header {
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.header .logo {
+  width: 120px;
+  color: #438ffe;
+}
+
+.header .avtar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.header .avtar img {
+  height: 100%;
+  width: auto;
+}
+
+.header .icons {
+  font-size: 1.5rem;
+}
+
+.main-content {
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+
+.main-content .title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3f386c;
+  margin-bottom: 2rem;
+}
+
+.sidebar {
+  -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+}
+
+.sidebar .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.sidebar .icons {
+  color: #abb1bf;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

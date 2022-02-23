@@ -1,0 +1,23 @@
+// Header area style
+.header{    
+    height: $header-height;
+    background-color: $header-bg;
+
+    .logo{
+        width: $sidebar-width;
+        color: $brand-icon-color;
+    }
+    .avtar{
+        height: $avtar-height;
+        width: $avtar-width;
+        border-radius: $circle-radius;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .icons{
+        font-size: $icon-size;
+    }
+}
+

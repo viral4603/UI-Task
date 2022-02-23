@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scss</title>
+    <link rel="stylesheet" href="./assets/icons/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container h-100 w-100 colum overflow-hidden">
+        <!-- header:start -->
+        <header class="header row align-center space-between">
+            <div class="header-brand row align-center">
+                <div class="logo row align-center justify-center">
+                    <span class="icons icon-stop2"></span>
+                </div>
+                <div class="search">
+                    <div class="search-input">
+                        <input type="search" class="input">
+                        <button class="button search-button" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile row align-center">
+                <span class="icons icon-message"></span>
+                <span class="icons icon-bell"></span>
+                <figure class="avtar overflow-hidden row align-center">
+                    <img src="./assets/images/img_avatar.png" alt="user_profile">
+                </figure>
+                <span></span>
+            </div>
+        </header>
+        <!-- header:start -->
+
+        <div class="content-wrapper flex-grow-1 row">
+            <!-- sidebar:start -->  
+            <input type="checkbox" id="chekbox" style="display: none;">
+            <aside class="sidebar h-100">
+                <!-- navbar:start -->
+                <nav class="navbar colum align-center space-between h-100">
+                    <ul class="navbar-itmes flex-grow-1 w-100">
+                        <li class="list-item">
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-radix-icons_dashboard"></span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-cart"></span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-notepad"></span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-notepad"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sign-out ">
+                        <li>
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-ep_warning-filled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"  class="nav-link">
+                                <span class="icons icon-sign-out"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- navbar:end -->
+
+
+            </aside>
+            <!-- sidebar:end -->
+
+            <!-- main:start -->
+            <div class="main-content flex-grow-1 colum">
+                <h2 class="title">Dashboard</h2>
+                <!-- card-view-start -->
+                <div class="card-view row align-center space-between wrap">
+                    <!-- card1:start -->
+                    <div class="card-wrapper">
+                        <div class="row align-center space-between">
+                            <span class="card-icon icon-bi_eye-fill icon-secondary">
+
+                            </span>
+                            <span class="card-icon icon-show_chart">
+                                
+                            </span>
+                        </div>
+                        <h5 class="card-title">
+                            Total Views
+                        </h5>
+                        <h3 class="card-counter">
+                            308.402
+                        </h3>
+                        <p class="card-details">
+                            Start from 1 Jan 2021 
+                        </p>
+                    </div>
+                    <!-- card1:end -->
+                    
+                    <!-- card2:start -->
+                    <div class="card-wrapper">
+                        <div class="row align-center space-between">
+                            <span class="card-icon icon-shopping-bag icon-warning">
+
+                            </span>
+                            <span class="card-icon icon-show_chart">
+                                
+                            </span>
+                        </div>
+                        <h5 class="card-title">
+                            Total Product
+                        </h5>
+                        <h3 class="card-counter">
+                            10.820
+                        </h3>
+                        <p class="card-details">
+                           + Add New Product
+                        </p>
+                    </div>
+                    <!-- card2:end -->
+
+                    <!-- card3:start -->
+                    <div class="card-wrapper">
+                        <div class="row align-center space-between">
+                            <span class="card-icon icon-user-group icon-success ">
+
+                            </span>
+                            <span class="card-icon icon-show_chart">
+                                
+                            </span>
+                        </div>
+                        <h5 class="card-title">
+                            Total Product
+                        </h5>
+                        <h3 class="card-counter">
+                            10.820
+                        </h3>
+                        <p class="card-details">
+                           + Add New Product
+                        </p>
+                    </div>
+                    <!-- card3:end -->
+
+                    <!-- card4:start -->
+                    <div class="card-wrapper">
+                        <div class="row align-center space-between">
+                            <span class="card-icon icon-cart icon-info">
+
+                            </span>
+                            <span class="card-icon icon-show_chart">
+                                
+                            </span>
+                        </div>
+                        <h5 class="card-title">
+                            Total Product
+                        </h5>
+                        <h3 class="card-counter">
+                            10.820
+                        </h3>
+                        <p class="card-details">
+                            + Add New Product
+                        </p>
+                    </div>
+                    <!-- card4:end -->
+                </div>
+                <!-- card-view-end -->
+
+                <!-- analysis-view-start -->
+                <div class="analysis-view row align-center space-between">
+                    <!-- table:start -->
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2">No</td>
+                                    <td>Product Name</td>
+                                    <td>Status</td>
+                                    <td>Sold</td>
+                                    <td>View</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>profile</td>
+                                    <td>News Mobile App Ui KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>profile</td>
+                                    <td>News Mobile App Ui KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>profile</td>
+                                    <td>News Mobile App Ui KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>profile</td>
+                                    <td>News Mobile App Ui KIT f..</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table:end -->
+                    <div class="analysis-graph">
+                        <div class="graph-details">
+                            <h5>Views & Sells</h5>
+                            <h5>this week</h5>
+                        </div> 
+                        <div class="graph-info">
+                            <h5><span></span>Total Views</h5>
+                            <h5><span></span>Total Sells</h5>
+                        </div>  
+                        <div class="graph-display row">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div> 
+                    </div>
+
+
+                </div>
+                <!-- analysis-view-end -->
+
+            </div>
+            <!-- main:end -->
+        </div>
+
+    </div>
+</body>
+
+</html>

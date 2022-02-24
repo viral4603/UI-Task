@@ -12,17 +12,18 @@ body{
     font-family: $font-family;
     font-size: $font-size-base;
     color: $body-color;
+    background-color: $tertiary;
     font-weight: $font-weight-normal;
 }
 
 ul{
     padding: 0;
     list-style: none;
-    a{
-        text-decoration: none;
-    }
 }
-
+a{
+    text-decoration: none;
+    color: $primary;
+}
 //display flex
 .row{
     display: flex;

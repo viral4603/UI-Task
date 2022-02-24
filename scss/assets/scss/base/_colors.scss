@@ -1,12 +1,12 @@
 //theme colors
 $primary:#abb1bf;
 $secondary:#3f386c;
+$tertiary:#f7f7f7;
 $white:#ffffff;
 $success:#438ffe;
 $info:#83bdbe;
 $warning:#8bc38a;
 $danger:#fe764b;
-$tertiary:#f7f7f7;
 
 //bodycolor
 $body-color:$primary;
@@ -14,6 +14,8 @@ $body-color:$primary;
 //header
 $header-bg:$white;
 $brand-icon-color:$success;
+//notification icon
+$notification-pending-color:$danger;
 
 //main
 $main-bg:$tertiary;
@@ -41,14 +43,19 @@ $table-cell-color:$secondary;
 $cell-status-color:$success;
 $cell-bg-color:$warning;
 
+//statistics graph view
+$statistics-title-color:$secondary;
+
 //create object colors
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "tertiary":$tertiary,
   "white":$white,
   "success":$success,
   "info":$info,
-  "warning":$warning
+  "warning":$warning,
+  "danger":$danger,
 );
 
 

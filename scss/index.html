@@ -12,67 +12,74 @@
 </head>
 
 <body>
-    <div class="container h-100 w-100 colum overflow-hidden">
+    <div class="main-wrapper h-100 w-100 colum overflow-hidden">
         <!-- header:start -->
-        <header class="header row align-center space-between">
-            <div class="header-brand row align-center">
-                <div class="logo row align-center justify-center">
-                    <span class="icons icon-stop2"></span>
-                </div>
+        <header class="header row align-center">
+            <div class="header-brand row align-center logo justify-center">
+                <span class="icons icon-stop2"></span>
+            </div>
+            <div class="header-content row align-center space-between flex-grow-1">
                 <div class="search">
-                    <div class="search-input">
-                        <input type="search" class="input">
+                    <div class="search-input row align-center">
+                        <span class="search-icon icon-search"></span>
+                        <input type="search" class="input" placeholder="Search for transation, item ,etc ">
                         <button class="button search-button" type="button">Search</button>
                     </div>
                 </div>
+                <div class="header-profile row align-center">
+                    <a href="#" class="notification">
+                        <span class="icons icon-message"></span>
+                    </a>
+                    <a href="#" class="notification">
+                        <span class="icons icon-bell"></span>
+                    </a>
+                    <figure class="avtar overflow-hidden row align-center">
+                        <img src="./assets/images/img_avatar.png" alt="user_profile">
+                    </figure>
+                    <span class="icon-keyboard_arrow_down"></span>
+                </div>
             </div>
-            <div class="header-profile row align-center">
-                <span class="icons icon-message"></span>
-                <span class="icons icon-bell"></span>
-                <figure class="avtar overflow-hidden row align-center">
-                    <img src="./assets/images/img_avatar.png" alt="user_profile">
-                </figure>
-                <span></span>
-            </div>
+
         </header>
         <!-- header:start -->
 
         <div class="content-wrapper flex-grow-1 row overflow-hidden">
-            <!-- sidebar:start -->  
+            <!-- sidebar:start -->
             <input type="checkbox" id="chekbox" style="display: none;">
             <aside class="sidebar h-100">
+                <label class="click-toggle" for="chekbox"><span class="icon-arrow_back"></span></label>
                 <!-- navbar:start -->
                 <nav class="navbar colum align-center space-between h-100 ">
                     <ul class="navbar-itmes flex-grow-1 w-100 vertical-scroll">
                         <li class="list-item">
-                            <a href="#"  class="nav-link">
-                                <span class="icons icon-radix-icons_dashboard"></span>
+                            <a href="#" class="nav-link">
+                                <span class="icons icon-dashboard-brand"></span>
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#"  class="nav-link">
+                            <a href="#" class="nav-link">
                                 <span class="icons icon-cart"></span>
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#"  class="nav-link">
+                            <a href="#" class="nav-link">
                                 <span class="icons icon-notepad"></span>
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#"  class="nav-link">
-                                <span class="icons icon-notepad"></span>
+                            <a href="#" class="nav-link">
+                                <span class="icons icon-settings"></span>
                             </a>
                         </li>
                     </ul>
                     <ul class="sign-out ">
                         <li>
-                            <a href="#"  class="nav-link">
-                                <span class="icons icon-ep_warning-filled"></span>
+                            <a href="#" class="nav-link">
+                                <span class="icons icon-warning"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#"  class="nav-link">
+                            <a href="#" class="nav-link">
                                 <span class="icons icon-sign-out"></span>
                             </a>
                         </li>
@@ -88,105 +95,114 @@
             <div class="main-content flex-grow-1 colum vertical-scroll">
                 <h2 class="title">Dashboard</h2>
                 <!-- card-view-start -->
-                <div class="card-view row align-center space-between wrap">
+                <div class="card-view row align-center wrap">
                     <!-- card1:start -->
                     <div class="card-wrapper">
-                        <div class="row align-center space-between">
-                            <span class="card-icon icon-bi_eye-fill icon-secondary">
+                        <div class="card card-secondary">
+                            <div class="row align-center space-between">
+                                <span class="card-icon icon-eye icon-secondary">
 
-                            </span>
-                            <span class="card-icon icon-show_chart">
-                                
-                            </span>
+                                </span>
+                                <span class="card-icon icon-show_chart">
+
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Total Views
+                            </h5>
+                            <h3 class="card-counter">
+                                308.402
+                            </h3>
+                            <p class="card-details">
+                                Start from 1 Jan 2021
+                            </p>
                         </div>
-                        <h5 class="card-title">
-                            Total Views
-                        </h5>
-                        <h3 class="card-counter">
-                            308.402
-                        </h3>
-                        <p class="card-details">
-                            Start from 1 Jan 2021 
-                        </p>
                     </div>
                     <!-- card1:end -->
-                    
+
                     <!-- card2:start -->
                     <div class="card-wrapper">
-                        <div class="row align-center space-between">
-                            <span class="card-icon icon-shopping-bag icon-warning">
+                        <div class="card card-warning">
+                            <div class="row align-center space-between">
+                                <span class="card-icon icon-shopping-bag icon-warning">
 
-                            </span>
-                            <span class="card-icon icon-show_chart">
-                                
-                            </span>
+                                </span>
+                                <span class="card-icon icon-show_chart">
+
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Total Product
+                            </h5>
+                            <h3 class="card-counter">
+                                10.820
+                            </h3>
+                            <p class="card-details">
+                                + Add New Product
+                            </p>
                         </div>
-                        <h5 class="card-title">
-                            Total Product
-                        </h5>
-                        <h3 class="card-counter">
-                            10.820
-                        </h3>
-                        <p class="card-details">
-                           + Add New Product
-                        </p>
                     </div>
                     <!-- card2:end -->
 
                     <!-- card3:start -->
                     <div class="card-wrapper">
-                        <div class="row align-center space-between">
-                            <span class="card-icon icon-user-group icon-success ">
+                        <div class="card card-success">
+                            <div class="row align-center space-between">
+                                <span class="card-icon icon-user-group icon-success ">
 
-                            </span>
-                            <span class="card-icon icon-show_chart">
-                                
-                            </span>
+                                </span>
+                                <span class="card-icon icon-show_chart">
+
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Total Users
+                            </h5>
+                            <h3 class="card-counter">
+                                8.425
+                            </h3>
+                            <p class="card-details">
+                                New user noted every week
+                            </p>
                         </div>
-                        <h5 class="card-title">
-                            Total Product
-                        </h5>
-                        <h3 class="card-counter">
-                            10.820
-                        </h3>
-                        <p class="card-details">
-                           + Add New Product
-                        </p>
                     </div>
                     <!-- card3:end -->
 
                     <!-- card4:start -->
                     <div class="card-wrapper">
-                        <div class="row align-center space-between">
-                            <span class="card-icon icon-cart icon-info">
+                        <div class="card card-info">
+                            <div class="row align-center space-between">
+                                <span class="card-icon icon-cart icon-info">
 
-                            </span>
-                            <span class="card-icon icon-show_chart">
-                                
-                            </span>
+                                </span>
+                                <span class="card-icon icon-show_chart">
+
+                                </span>
+                            </div>
+                            <h5 class="card-title">
+                                Total Sell
+                            </h5>
+                            <h3 class="card-counter">
+                                1.075
+                            </h3>
+                            <p class="card-details">
+                                Start from 1 Jan 2021
+                            </p>
                         </div>
-                        <h5 class="card-title">
-                            Total Product
-                        </h5>
-                        <h3 class="card-counter">
-                            10.820
-                        </h3>
-                        <p class="card-details">
-                            + Add New Product
-                        </p>
                     </div>
                     <!-- card4:end -->
                 </div>
                 <!-- card-view-end -->
 
                 <!-- analysis-view-start -->
-                <div class="analysis-view row align-center space-between vertical-scroll">
+                <div class="analysis-view row vertical-scroll w-100">
                     <!-- table:start -->
-                    <div>
-                        <table class="table">
+                    <div class="table-inner">
+                        <table class="table w-100">
                             <thead class="heading">
                                 <tr>
-                                    <th colspan="2">No</th>
+                                    <th>No</th>
+                                    <th></th>
                                     <th>Product Name</th>
                                     <th>Status</th>
                                     <th>Sold</th>
@@ -196,33 +212,45 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
+                                    <td>
+                                        <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                alt="user_profile"></figure>
+                                    </td>
                                     <td>News Mobile App Ui KIT f..</td>
-                                    <td>Active</td>
+                                    <td class="active">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
+                                    <td>
+                                        <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                alt="user_profile"></figure>
+                                    </td>
                                     <td>News Mobile App Ui KIT f..</td>
-                                    <td>Active</td>
+                                    <td class="active">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
+                                    <td>
+                                        <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                alt="user_profile"></figure>
+                                    </td>
                                     <td>News Mobile App Ui KIT f..</td>
-                                    <td>Active</td>
+                                    <td class="active">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
+                                    <td>
+                                        <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                alt="user_profile"></figure>
+                                    </td>
                                     <td>News Mobile App Ui KIT f..</td>
-                                    <td>Active</td>
+                                    <td class="active">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
@@ -230,25 +258,66 @@
                         </table>
                     </div>
                     <!-- table:end -->
-                    <div class="analysis-graph">
-                        <div class="graph-details">
-                            <h5>Views & Sells</h5>
-                            <h5>this week</h5>
-                        </div> 
-                        <div class="graph-info">
-                            <h5><span></span>Total Views</h5>
-                            <h5><span></span>Total Sells</h5>
-                        </div>  
-                        <div class="graph-display row">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div> 
-                    </div>
+
+                    <!-- statistics:start -->
+                    
+                        <div class="statistics">
+                            <div class="statistics-details row align-center space-between">
+                                <h5 class="details">Views & Sells</h5>
+                                <p class="week-options row align-center">this week <span class="icon-keyboard_arrow_down"></span></p>
+                                
+                            </div>
+                            <div class="statistics-info row align-center">
+                                <div class="info row align-center">
+                                    <span class="icon icon-stop2"></span> 
+                                    <h5>Total Views</h5>
+                                </div>
+                                <div class="info row align-center ">
+                                    <span class="icon icon-stop2"></span>
+                                    <h5>Total Sells</h5>
+                                </div>
+                            </div>
+                            <!-- graph:start     -->
+                            <div class="statistics-graph row">
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>M</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>T</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>W</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>T</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>F</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>S</p>
+                                </div>
+                                <div class="grid-line">
+                                    <div class="sell"></div>
+                                    <div class="view"></div>
+                                    <p>S</p>
+                                </div>
+                            </div>
+                            <!-- graph:end     -->
+                        </div>        
+                  <!-- statistics:end -->
 
 
                 </div>

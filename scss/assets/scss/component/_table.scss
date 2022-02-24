@@ -1,16 +1,22 @@
+.table-inner{
+    width: 65%;
+    padding-right: 1.2rem;
+
+}
 .table{
-    margin-top: 1rem;
     color: $table-cell-color;
     background-color: $table-bg-color;
     padding: $table-inner-space;
     border-radius: $table-radius;
     border-spacing: 0 1rem;
-    th,td{
-        padding:$table-cell-padding ;
-       
-    }
+    text-align: $table-cell-align;
     td{
+        padding:$table-cell-padding ;       
         background-color: rgba($cell-bg-color,0.16);
+    }
+
+    td.active{
+        color: $cell-status-color;
     }
     .cell-profile{
         height: $cell-profile-height;

@@ -1,23 +1,59 @@
 // Header area style
-.header{    
+.header {
     height: $header-height;
     background-color: $header-bg;
-
-    .logo{
+    border-bottom: $border-bottom;
+    .header-content{
+        padding: $main-wrapper-padding;
+    }
+    .logo {
         width: $sidebar-width;
         color: $brand-icon-color;
     }
-    .avtar{
+
+    .avtar {
         height: $avtar-height;
         width: $avtar-width;
         border-radius: $circle-radius;
-        img{
+        margin-right: 1rem;
+        img {
             height: 100%;
             width: auto;
+        }
+    }
+    .search-input {
+        position: relative;
+        .search-icon {
+            font-size: 1.5rem;
+            @include position(absolute,0.5rem,auto,auto,0.75rem);
+            // position: absolute;
+            // top: 0.5rem;
+            // left: 0.75rem;
+        }
+        .input {
+            width: 350px;
+            padding: 0.75rem 1.25rem 0.75rem 2.2rem;
+        }
+        .button {
+            margin-left: -0.3rem;
         }
     }
     .icons{
         font-size: $icon-size;
     }
-}
+    .notification{
+        margin-right: 2rem;
+        .icons {
+            &::after{
+                content: '';
+                height: 10px;
+                width: 10px;
+                border-radius: $circle-radius;
+                background-color: $notification-pending-color;
+                @include position(absolute,auto,auto,auto,auto);
+            }
+        }
 
+    }
+    
+}

@@ -8,20 +8,24 @@ $font-weight-normal:400;
 $title-size-base:2rem;
 
 //Radious
-$radius:0;
+$border-radius:0;
+$border-bottom:0.01rem solid $primary;
 $circle-radius:50%;
 
 //Header
-$header-height:80px;
+$header-height:90px;
 $header-padding:0rem 1.2rem;
-$icon-size:1.5rem;
+$icon-size:1.6rem;
 
 //Sidebar
-$sidebar-width:120px;
+$sidebar-width:100px;
 $sidebar-items-padding:2rem 0rem;
+
+//main-display-content
+// $content-max-width:1920px;
 //Button
-$button-padding:0.5rem;
-$button-radious:$radius;
+$button-padding: 0.75rem 1.25rem;
+$button-radious:$border-radius;
 $button-border:none;
 
 //Input Field
@@ -33,35 +37,39 @@ $avtar-height:40px;
 $avtar-width:40px;
 
 //main-wrapper
-$main-wrapper-padding:2rem;
+$main-wrapper-padding:2.5rem;
 
 //heading tittle
 $title-padding:$sidebar-items-padding;
 
 //card
-$card-width:23%;
-$card-inner-space:1rem;
-$card-icon-height:50px;
-$card-icon-width:50px;
-$card-space-bottom:1.2rem;
+$card-width:25%;
+$card-padding-base:1.2rem;
+$card-icon-height:60px;
+$card-icon-width:60px;
+$card-icon-bottom:1.2rem;
 $card-icon-font:$icon-size;
 
 $card-title:$font-size-base;
 $card-title-weight:$font-weight-normal;
 $card-margin-bottom:1rem;
 
-$card-counter-size:1.6rem;
+$card-counter-size:2.25rem;
 $card-counter-weight:$font-weight-normal;
-$card-counter-bottom:1rem;
+$card-counter-bottom:1.2rem;
 
 
 //table
-$table-radius:$radius;
+$table-radius:$border-radius;
 $table-inner-space:1rem;
-$table-cell-padding:1rem;
+$table-cell-padding:0.75rem;
+$table-cell-align:left;
 
+//table-cell padding
 $cell-profile-height:40px;
 $cell-profile-width:40px;
+
+
 
 
 

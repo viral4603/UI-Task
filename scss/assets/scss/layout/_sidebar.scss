@@ -1,5 +1,7 @@
 .sidebar{
     flex-basis: $sidebar-width;
+    background-color: $white;
+    position: relative;
     .nav-link{
         display: flex;
         align-items: center;
@@ -9,5 +11,12 @@
     .icons{
         color: $icon-color;
         font-size: $icon-size;
+        @extend %transtion-all;
+        &:hover{
+            color: $success;
+        }
+    }
+    .click-toggle{
+        @include position(absolute,auto,auto,auto,auto);
     }
 }

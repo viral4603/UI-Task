@@ -37,13 +37,13 @@
         </header>
         <!-- header:start -->
 
-        <div class="content-wrapper flex-grow-1 row">
+        <div class="content-wrapper flex-grow-1 row overflow-hidden">
             <!-- sidebar:start -->  
             <input type="checkbox" id="chekbox" style="display: none;">
             <aside class="sidebar h-100">
                 <!-- navbar:start -->
-                <nav class="navbar colum align-center space-between h-100">
-                    <ul class="navbar-itmes flex-grow-1 w-100">
+                <nav class="navbar colum align-center space-between h-100 ">
+                    <ul class="navbar-itmes flex-grow-1 w-100 vertical-scroll">
                         <li class="list-item">
                             <a href="#"  class="nav-link">
                                 <span class="icons icon-radix-icons_dashboard"></span>
@@ -85,7 +85,7 @@
             <!-- sidebar:end -->
 
             <!-- main:start -->
-            <div class="main-content flex-grow-1 colum">
+            <div class="main-content flex-grow-1 colum vertical-scroll">
                 <h2 class="title">Dashboard</h2>
                 <!-- card-view-start -->
                 <div class="card-view row align-center space-between wrap">
@@ -180,23 +180,23 @@
                 <!-- card-view-end -->
 
                 <!-- analysis-view-start -->
-                <div class="analysis-view row align-center space-between">
+                <div class="analysis-view row align-center space-between vertical-scroll">
                     <!-- table:start -->
-                    <div class="table">
-                        <table>
-                            <thead>
+                    <div>
+                        <table class="table">
+                            <thead class="heading">
                                 <tr>
-                                    <td colspan="2">No</td>
-                                    <td>Product Name</td>
-                                    <td>Status</td>
-                                    <td>Sold</td>
-                                    <td>View</td>
+                                    <th colspan="2">No</th>
+                                    <th>Product Name</th>
+                                    <th>Status</th>
+                                    <th>Sold</th>
+                                    <th>View</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>profile</td>
+                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
                                     <td>News Mobile App Ui KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -204,7 +204,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>profile</td>
+                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
                                     <td>News Mobile App Ui KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -212,7 +212,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>profile</td>
+                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
                                     <td>News Mobile App Ui KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>
@@ -220,7 +220,7 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>profile</td>
+                                    <td ><figure class="cell-profile"><img src="./assets/images/img_avatar.png" alt="user_profile"></figure></td>
                                     <td>News Mobile App Ui KIT f..</td>
                                     <td>Active</td>
                                     <td>10</td>

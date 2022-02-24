@@ -212,6 +212,34 @@ ul a {
   margin-bottom: 1rem;
 }
 
+.table {
+  margin-top: 1rem;
+  color: #3f386c;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0;
+  border-spacing: 0 1rem;
+}
+
+.table th, .table td {
+  padding: 1rem;
+}
+
+.table td {
+  background-color: rgba(139, 195, 138, 0.16);
+}
+
+.table .cell-profile {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+
+.table .cell-profile img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   height: 80px;
   background-color: #ffffff;

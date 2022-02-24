@@ -1,0 +1,25 @@
+.table{
+    margin-top: 1rem;
+    color: $table-cell-color;
+    background-color: $table-bg-color;
+    padding: $table-inner-space;
+    border-radius: $table-radius;
+    border-spacing: 0 1rem;
+    th,td{
+        padding:$table-cell-padding ;
+       
+    }
+    td{
+        background-color: rgba($cell-bg-color,0.16);
+    }
+    .cell-profile{
+        height: $cell-profile-height;
+        width: $cell-profile-width;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}

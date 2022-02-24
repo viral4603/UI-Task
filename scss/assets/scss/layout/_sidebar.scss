@@ -1,22 +1,46 @@
-.sidebar{
+.sidebar {
     flex-basis: $sidebar-width;
     background-color: $white;
     position: relative;
-    .nav-link{
+    overflow: hidden;
+    @extend %transtion-all;
+
+    .nav-link {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: $sidebar-items-padding;
     }
-    .icons{
+    .icons {
         color: $icon-color;
         font-size: $icon-size;
         @extend %transtion-all;
-        &:hover{
-            color: $success;
-        }
     }
-    .click-toggle{
-        @include position(absolute,auto,auto,auto,auto);
+}
+
+//toggle arrow icon
+.click-toggle {
+    @include position(absolute, auto, auto, 50%, 100px);
+    cursor: pointer;
+    height: 40px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    @extend %transtion-all;
+    span {
+        font-size: 1rem;
+        @extend %transtion-all;
+    }
+}
+#chekbox:checked + .sidebar {
+    width: 0;
+    flex-basis: 0;
+}
+#chekbox:checked + .sidebar ~ .click-toggle {
+    left: 0;
+    span {
+        transform: rotate(180deg);
     }
 }

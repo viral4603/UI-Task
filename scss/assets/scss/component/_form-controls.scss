@@ -5,10 +5,14 @@
 .input{
     padding: $input-padding;
     border: $input-border;
-    background-color: $input-bg;
+    background-color:#f5f7f9;
     font-family: $font-family;
     font-size: $font-size-base;
     &:focus-visible{
         outline: none;
+    }
+    &::placeholder{
+        color: $primary;
+        font-size: 1rem;
     }
 }

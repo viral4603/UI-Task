@@ -9,7 +9,7 @@ $title-size-base:2rem;
 
 //Radious
 $border-radius:0;
-$border-bottom:0.01rem solid $primary;
+$border-bottom:0.01rem solid $border-color;
 $circle-radius:50%;
 
 //Header
@@ -24,7 +24,7 @@ $sidebar-items-padding:2rem 0rem;
 //main-display-content
 // $content-max-width:1920px;
 //Button
-$button-padding: 0.75rem 1.25rem;
+$button-padding: 1rem 1.25rem;
 $button-radious:$border-radius;
 $button-border:none;
 

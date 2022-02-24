@@ -9,4 +9,21 @@
       color: $value;
       background-color: rgba($value,0.12);
     }
+
+    //link-hover map
+    .nav-link-#{$name}{
+      &:hover{
+        span{
+          color: $value;
+        }
+      }
+    }
+}
+
+//width diffrent class
+$width-size:("10":10%,"20":20%,"30":30%,"40":40%,"50":50%,"70":70%,"100":100%);
+@each $key,$value in $width-size {
+  .h-#{$key}{
+    height: $value;
+  }
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
-.card-wrapper .card, .card-wrapper .card .card-icon, .card-wrapper .card .card-title, .card-wrapper .card .card-counter, .sidebar .icons {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.card-wrapper .card, .card-wrapper .card .card-icon, .card-wrapper .card .card-title, .card-wrapper .card .card-counter, .sidebar, .sidebar .icons, .click-toggle, .click-toggle span {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 *, ::after, ::before {
@@ -146,9 +146,17 @@ a {
   background-color: rgba(171, 177, 191, 0.12);
 }
 
+.nav-link-primary:hover span {
+  color: #abb1bf;
+}
+
 .icon-secondary {
   color: #3f386c;
   background-color: rgba(63, 56, 108, 0.12);
+}
+
+.nav-link-secondary:hover span {
+  color: #3f386c;
 }
 
 .icon-tertiary {
@@ -156,9 +164,17 @@ a {
   background-color: rgba(247, 247, 247, 0.12);
 }
 
+.nav-link-tertiary:hover span {
+  color: #f7f7f7;
+}
+
 .icon-white {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.12);
+}
+
+.nav-link-white:hover span {
+  color: #ffffff;
 }
 
 .icon-success {
@@ -166,9 +182,17 @@ a {
   background-color: rgba(67, 143, 254, 0.12);
 }
 
+.nav-link-success:hover span {
+  color: #438ffe;
+}
+
 .icon-info {
   color: #83bdbe;
   background-color: rgba(131, 189, 190, 0.12);
+}
+
+.nav-link-info:hover span {
+  color: #83bdbe;
 }
 
 .icon-warning {
@@ -176,15 +200,52 @@ a {
   background-color: rgba(139, 195, 138, 0.12);
 }
 
+.nav-link-warning:hover span {
+  color: #8bc38a;
+}
+
 .icon-danger {
   color: #fe764b;
   background-color: rgba(254, 118, 75, 0.12);
 }
 
+.nav-link-danger:hover span {
+  color: #fe764b;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 .button {
+  cursor: pointer;
   color: #ffffff;
   background-color: #438ffe;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.25rem;
   border-radius: 0;
   border: none;
   font-family: "Josefin Sans", sans-serif;
@@ -192,9 +253,9 @@ a {
 }
 
 .input {
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.25rem;
   border: none;
-  background-color: #f7f7f7;
+  background-color: #f5f7f9;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
 }
@@ -203,12 +264,33 @@ a {
   outline: none;
 }
 
+.input::-webkit-input-placeholder {
+  color: #abb1bf;
+  font-size: 1rem;
+}
+
+.input:-ms-input-placeholder {
+  color: #abb1bf;
+  font-size: 1rem;
+}
+
+.input::-ms-input-placeholder {
+  color: #abb1bf;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: #abb1bf;
+  font-size: 1rem;
+}
+
 .card-wrapper {
   width: 25%;
   padding: 0 0.65rem;
 }
 
 .card-wrapper .card {
+  cursor: pointer;
   background-color: #ffffff;
   padding: 1.2rem;
 }
@@ -245,7 +327,7 @@ a {
   font-weight: 400;
   color: #3f386c;
   padding-bottom: 1.2rem;
-  border-bottom: 0.01rem solid #abb1bf;
+  border-bottom: 0.01rem solid #e7e7e7;
 }
 
 .card-wrapper .card .card-details {
@@ -253,6 +335,7 @@ a {
 }
 
 .card-primary:hover {
+  cursor: pointer;
   background-color: #abb1bf;
   color: #ffffff;
 }
@@ -267,6 +350,7 @@ a {
 }
 
 .card-secondary:hover {
+  cursor: pointer;
   background-color: #3f386c;
   color: #ffffff;
 }
@@ -281,6 +365,7 @@ a {
 }
 
 .card-tertiary:hover {
+  cursor: pointer;
   background-color: #f7f7f7;
   color: #ffffff;
 }
@@ -295,6 +380,7 @@ a {
 }
 
 .card-white:hover {
+  cursor: pointer;
   background-color: white;
   color: #ffffff;
 }
@@ -309,6 +395,7 @@ a {
 }
 
 .card-success:hover {
+  cursor: pointer;
   background-color: #438ffe;
   color: #ffffff;
 }
@@ -323,6 +410,7 @@ a {
 }
 
 .card-info:hover {
+  cursor: pointer;
   background-color: #83bdbe;
   color: #ffffff;
 }
@@ -337,6 +425,7 @@ a {
 }
 
 .card-warning:hover {
+  cursor: pointer;
   background-color: #8bc38a;
   color: #ffffff;
 }
@@ -351,6 +440,7 @@ a {
 }
 
 .card-danger:hover {
+  cursor: pointer;
   background-color: #fe764b;
   color: #ffffff;
 }
@@ -380,7 +470,7 @@ a {
 
 .table td {
   padding: 0.75rem;
-  background-color: rgba(139, 195, 138, 0.16);
+  background-color: #f5f7f9;
 }
 
 .table td.active {
@@ -401,7 +491,7 @@ a {
 .header {
   height: 90px;
   background-color: #ffffff;
-  border-bottom: 0.01rem solid #abb1bf;
+  border-bottom: 0.01rem solid #e7e7e7;
 }
 
 .header .header-content {
@@ -430,9 +520,9 @@ a {
 }
 
 .header .search-input .search-icon {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   position: absolute;
-  top: 0.5rem;
+  top: 0.7rem;
   right: auto;
   bottom: auto;
   left: 0.75rem;
@@ -440,7 +530,7 @@ a {
 
 .header .search-input .input {
   width: 350px;
-  padding: 0.75rem 1.25rem 0.75rem 2.2rem;
+  padding: 1rem 1.25rem 1rem 3rem;
 }
 
 .header .search-input .button {
@@ -476,7 +566,7 @@ a {
   font-size: 2rem;
   font-weight: 500;
   color: #3f386c;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .card-view {
@@ -546,7 +636,6 @@ a {
 
 .statistics-graph .grid-line .sell, .statistics-graph .grid-line .view {
   width: 0.5rem;
-  height: 25%;
   margin: 0rem 0.25rem;
   background-color: #83bdbe;
 }
@@ -565,6 +654,7 @@ a {
       flex-basis: 100px;
   background-color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 .sidebar .nav-link {
@@ -585,15 +675,43 @@ a {
   font-size: 1.6rem;
 }
 
-.sidebar .icons:hover {
-  color: #438ffe;
-}
-
-.sidebar .click-toggle {
+.click-toggle {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: auto;
-  left: auto;
+  bottom: 50%;
+  left: 100px;
+  cursor: pointer;
+  height: 40px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+}
+
+.click-toggle span {
+  font-size: 1rem;
+}
+
+#chekbox:checked + .sidebar {
+  width: 0;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+#chekbox:checked + .sidebar ~ .click-toggle {
+  left: 0;
+}
+
+#chekbox:checked + .sidebar ~ .click-toggle span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

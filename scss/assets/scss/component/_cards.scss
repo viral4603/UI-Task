@@ -3,6 +3,7 @@
     width: $card-width;
     padding: 0 0.65rem;
     .card {
+        cursor: pointer;
         //card-icons
         background-color: $card-bg-color;
         padding: $card-padding-base;
@@ -48,6 +49,7 @@
      .card-#{$key}{
          
         &:hover{
+            cursor: pointer;
             background-color: rgba($color: $value, $alpha: 1);
             color: $white;
             .card-icon,.card-title,.card-counter{

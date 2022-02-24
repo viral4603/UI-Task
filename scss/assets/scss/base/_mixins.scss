@@ -8,3 +8,10 @@
     bottom: $bottom;
     left: $left;
 }
+
+//mixing boder
+@mixin  border ($type,$width,$color){
+    border: $type $width $color;
+}
+    
+

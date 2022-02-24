@@ -21,16 +21,16 @@
             <div class="header-content row align-center space-between flex-grow-1">
                 <div class="search">
                     <div class="search-input row align-center">
-                        <span class="search-icon icon-search"></span>
-                        <input type="search" class="input" placeholder="Search for transation, item ,etc ">
+                        <label for="input-search"><span class="search-icon icon-search"></span></label>
+                        <input type="search" class="input" placeholder="Search for transation, item ,etc" id="input-search">
                         <button class="button search-button" type="button">Search</button>
                     </div>
                 </div>
                 <div class="header-profile row align-center">
-                    <a href="#" class="notification">
+                    <a href="#" class="notification nav-link-success">
                         <span class="icons icon-message"></span>
                     </a>
-                    <a href="#" class="notification">
+                    <a href="#" class="notification nav-link-secondary">
                         <span class="icons icon-bell"></span>
                     </a>
                     <figure class="avtar overflow-hidden row align-center">
@@ -47,39 +47,38 @@
             <!-- sidebar:start -->
             <input type="checkbox" id="chekbox" style="display: none;">
             <aside class="sidebar h-100">
-                <label class="click-toggle" for="chekbox"><span class="icon-arrow_back"></span></label>
                 <!-- navbar:start -->
                 <nav class="navbar colum align-center space-between h-100 ">
                     <ul class="navbar-itmes flex-grow-1 w-100 vertical-scroll">
                         <li class="list-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link nav-link-secondary ">
                                 <span class="icons icon-dashboard-brand"></span>
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link nav-link-success">
                                 <span class="icons icon-cart"></span>
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link nav-link-info">
                                 <span class="icons icon-notepad"></span>
                             </a>
                         </li>
-                        <li class="list-item">
-                            <a href="#" class="nav-link">
+                        <li class="list-item ">
+                            <a href="#" class="nav-link nav-link-warning">
                                 <span class="icons icon-settings"></span>
                             </a>
                         </li>
                     </ul>
-                    <ul class="sign-out ">
+                    <ul class="sign-out navbar-itmes ">
                         <li>
-                            <a href="#" class="nav-link">
-                                <span class="icons icon-warning"></span>
+                            <a href="#" class="nav-link nav-link-success">
+                                <span class="icons icon-warnings"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link nav-link-danger">
                                 <span class="icons icon-sign-out"></span>
                             </a>
                         </li>
@@ -89,10 +88,12 @@
 
 
             </aside>
+            <label class="click-toggle" for="chekbox"><span class="icon-arrow_back"></span></label>
+
             <!-- sidebar:end -->
 
             <!-- main:start -->
-            <div class="main-content flex-grow-1 colum vertical-scroll">
+            <div class="main-content flex-grow-1 colum">
                 <h2 class="title">Dashboard</h2>
                 <!-- card-view-start -->
                 <div class="card-view row align-center wrap">
@@ -195,7 +196,7 @@
                 <!-- card-view-end -->
 
                 <!-- analysis-view-start -->
-                <div class="analysis-view row vertical-scroll w-100">
+                <div class="analysis-view row w-100 vertical-scroll">
                     <!-- table:start -->
                     <div class="table-inner">
                         <table class="table w-100">
@@ -209,7 +210,9 @@
                                     <th>View</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                        </table>
+                        <table class="table w-100">
+                            <tbody class="vertical-scroll ">
                                 <tr>
                                     <td>1</td>
                                     <td>
@@ -280,38 +283,38 @@
                             <!-- graph:start     -->
                             <div class="statistics-graph row">
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-20"></div>
+                                    <div class="view h-50"></div>
                                     <p>M</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-40"></div>
+                                    <div class="view h-30"></div>
                                     <p>T</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-20"></div>
+                                    <div class="view h-30"></div>
                                     <p>W</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-70"></div>
+                                    <div class="view h-10" ></div>
                                     <p>T</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-50"></div>
+                                    <div class="view h-10"></div>
                                     <p>F</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-50"></div>
+                                    <div class="view h-50"></div>
                                     <p>S</p>
                                 </div>
                                 <div class="grid-line">
-                                    <div class="sell"></div>
-                                    <div class="view"></div>
+                                    <div class="sell h-10"></div>
+                                    <div class="view h-10"></div>
                                     <p>S</p>
                                 </div>
                             </div>

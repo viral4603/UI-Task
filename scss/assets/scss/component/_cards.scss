@@ -49,7 +49,6 @@
      .card-#{$key}{
          
         &:hover{
-            cursor: pointer;
             background-color: rgba($color: $value, $alpha: 1);
             color: $white;
             .card-icon,.card-title,.card-counter{

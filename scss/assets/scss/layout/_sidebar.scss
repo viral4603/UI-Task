@@ -17,7 +17,9 @@
         @extend %transtion-all;
     }
 }
-
+#chekbox{
+    display: none;
+}
 //toggle arrow icon
 .click-toggle {
     @include position(absolute, auto, auto, 50%, 100px);

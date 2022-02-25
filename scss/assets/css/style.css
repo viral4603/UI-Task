@@ -267,21 +267,25 @@ a {
 .input::-webkit-input-placeholder {
   color: #abb1bf;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .input:-ms-input-placeholder {
   color: #abb1bf;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .input::-ms-input-placeholder {
   color: #abb1bf;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .input::placeholder {
   color: #abb1bf;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .card-wrapper {
@@ -335,7 +339,6 @@ a {
 }
 
 .card-primary:hover {
-  cursor: pointer;
   background-color: #abb1bf;
   color: #ffffff;
 }
@@ -350,7 +353,6 @@ a {
 }
 
 .card-secondary:hover {
-  cursor: pointer;
   background-color: #3f386c;
   color: #ffffff;
 }
@@ -365,7 +367,6 @@ a {
 }
 
 .card-tertiary:hover {
-  cursor: pointer;
   background-color: #f7f7f7;
   color: #ffffff;
 }
@@ -380,7 +381,6 @@ a {
 }
 
 .card-white:hover {
-  cursor: pointer;
   background-color: white;
   color: #ffffff;
 }
@@ -395,7 +395,6 @@ a {
 }
 
 .card-success:hover {
-  cursor: pointer;
   background-color: #438ffe;
   color: #ffffff;
 }
@@ -410,7 +409,6 @@ a {
 }
 
 .card-info:hover {
-  cursor: pointer;
   background-color: #83bdbe;
   color: #ffffff;
 }
@@ -425,7 +423,6 @@ a {
 }
 
 .card-warning:hover {
-  cursor: pointer;
   background-color: #8bc38a;
   color: #ffffff;
 }
@@ -440,7 +437,6 @@ a {
 }
 
 .card-danger:hover {
-  cursor: pointer;
   background-color: #fe764b;
   color: #ffffff;
 }
@@ -457,6 +453,16 @@ a {
 .table-inner {
   width: 65%;
   padding-right: 1.2rem;
+  overflow: hidden;
+}
+
+.table-scroll {
+  overflow: auto;
+}
+
+.table-scroll .table {
+  padding: 0rem 1rem 1rem 1rem;
+  border-spacing: 0 1rem;
 }
 
 .table {
@@ -464,13 +470,18 @@ a {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 0;
-  border-spacing: 0 1rem;
   text-align: left;
 }
 
 .table td {
   padding: 0.75rem;
   background-color: #f5f7f9;
+  width: 20%;
+}
+
+.table th {
+  width: 20%;
+  padding: 0.75rem 0.75rem 0rem 0.75rem;
 }
 
 .table td.active {
@@ -488,6 +499,13 @@ a {
   height: auto;
 }
 
+.table .product {
+  white-space: nowrap;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .header {
   height: 90px;
   background-color: #ffffff;
@@ -495,7 +513,7 @@ a {
 }
 
 .header .header-content {
-  padding: 2.5rem;
+  padding: 1.3rem 2.5rem;
 }
 
 .header .logo {
@@ -579,6 +597,7 @@ a {
   background-color: #ffffff;
   padding: 2rem 1rem 1rem 1rem;
   color: #3f386c;
+  overflow: auto;
 }
 
 .statistics-details {
@@ -589,30 +608,31 @@ a {
   font-size: 1rem;
 }
 
+.statistics .week-options {
+  color: #abb1bf;
+}
+
 .statistics-info {
   padding-bottom: 1rem;
 }
 
-.statistics-info .info {
-  font-size: 1rem;
+.statistics-info .icon-square {
+  height: 10px;
+  width: 10px;
+  margin-right: 0.25rem;
+  background-color: #83bdbe;
 }
 
 .statistics-info .info:first-child {
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
-.statistics-info .info:first-child span {
-  color: #83bdbe;
-  margin-right: 0.25rem;
-}
-
-.statistics-info .info:last-child span {
-  color: #fe764b;
-  margin-right: 0.25rem;
+.statistics-info .info:first-child .icon-square {
+  background-color: #fe764b;
 }
 
 .statistics-graph {
-  max-height: 250px;
+  max-height: 280px;
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -632,6 +652,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 0.5rem;
 }
 
 .statistics-graph .grid-line .sell, .statistics-graph .grid-line .view {
@@ -673,6 +694,10 @@ a {
 .sidebar .icons {
   color: #abb1bf;
   font-size: 1.6rem;
+}
+
+#chekbox {
+  display: none;
 }
 
 .click-toggle {

@@ -10,6 +10,9 @@
         width: $sidebar-width;
         color: $brand-icon-color;
     }
+    .header-expand,#header-expand{
+        display: none;
+    }
 
     .avtar {
         height: $avtar-height;
@@ -20,6 +23,9 @@
             height: 100%;
             width: auto;
         }
+    }
+    .header-profile{
+        @extend %transtion-all;
     }
     .search-input {
         position: relative;
@@ -57,3 +63,50 @@
     }
     
 }
+//size max 991
+@include for-size('lg'){
+    .header .logo{
+        width: 50px;
+    }
+
+}
+//size max 991
+@include for-size('md'){
+    .header{
+        .header-profile{
+            width: 0px;
+            overflow: hidden;
+            transition: all 0.7s ease;
+            
+        }
+
+       .logo{
+            width: 50px;
+        }
+        .header-expand{
+            display: block;
+        }
+        .notification{           
+            .icons {
+                &::after{
+                   background-color: transparent;
+                }
+            }
+        }
+        //
+        #header-expand:checked ~.header-profile{
+            width: 100%;
+            overflow: unset;
+            .notification{           
+                .icons {
+                    &::after{
+                       background-color: $danger;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    
+ 

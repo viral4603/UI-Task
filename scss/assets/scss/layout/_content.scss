@@ -2,6 +2,7 @@
 
 .main-content{
     padding: $padding-base;
+    overflow: auto;
    
     .title{
         font-size: $title-size-base;
@@ -16,7 +17,9 @@
     margin: 0rem -0.65rem 1.3rem;
 }
 //analysis-view table and statistics wrap
-
+// .analysis-view{
+    
+// }
 //statistics css here
 .statistics{
     width: 35%;
@@ -79,4 +82,14 @@
             color: $primary;
         }
     }
+}
+@include for-size('xl'){
+    .analysis-view{
+    overflow: hidden;
+}
+}
+@include for-size('lg'){
+    .analysis-view{
+    overflow: unset;
+}
 }

@@ -1,5 +1,6 @@
 .sidebar {
     flex-basis: $sidebar-width;
+    flex-shrink: 0;
     background-color: $white;
     position: relative;
     overflow: hidden;
@@ -45,4 +46,20 @@
     span {
         transform: rotate(180deg);
     }
+}
+
+//responive css for sidebar
+@include for-size('xl'){
+  
+}
+//media query for below 992px
+@include for-size('lg'){
+    //sidebar
+    .sidebar{
+        flex-basis: 50px;
+    }   
+    .click-toggle{
+        @include position(absolute, auto, auto, 50%, 50px);
+    }
+
 }

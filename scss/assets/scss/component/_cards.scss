@@ -63,3 +63,34 @@
         }    
     }
 }
+
+//responsive
+//media query for below 992px
+@include for-size('lg'){
+    .card-wrapper {
+        width: 50%;
+        &:nth-child(1),&:nth-child(2){
+            margin-bottom: 1.3rem;
+        }
+    }
+    
+ 
+}
+//media query for below 768px
+
+@include for-size('md'){
+    .card-wrapper {
+        width: 100%;
+        &:nth-child(1),&:nth-child(2){
+            margin-bottom: 1rem;
+        }
+    }
+ 
+}
+@include for-size('sm'){
+    .card-wrapper {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+ 
+}

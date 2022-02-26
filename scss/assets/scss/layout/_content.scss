@@ -12,14 +12,12 @@
     }
 }
 
+
 //card-view
 .card-view{
     margin: 0rem -0.65rem 1.3rem;
 }
-//analysis-view table and statistics wrap
-// .analysis-view{
-    
-// }
+
 //statistics css here
 .statistics{
     width: 35%;
@@ -29,7 +27,7 @@
     color: $statistics-title-color;
     overflow: auto;
     &-details{
-        padding-bottom: 1rem;
+        padding-bottom: 1.2rem;
     }
     .details{
         font-size: 1rem;
@@ -57,7 +55,7 @@
   
 }
 
-//graph display
+//graph css
 .statistics-graph{
     max-height: 280px;
     height: 100%;
@@ -78,7 +76,7 @@
             background-color: $danger;
         }
         p{
-            padding: 0.25rem;
+            padding: 1.25rem 0rem;
             color: $primary;
         }
     }
@@ -91,5 +89,22 @@
 @include for-size('lg'){
     .analysis-view{
     overflow: unset;
+    .statistics{
+        width: 100%;
+        overflow: hidden;
+        min-height: 400px;
+    }
 }
+}
+
+@include for-size('md'){
+    
+
+}
+//responsive for phone
+@include for-size('sm'){
+    .main-content{
+        padding: 2rem;
+    }
+
 }

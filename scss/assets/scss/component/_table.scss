@@ -1,6 +1,7 @@
 .table-inner{
     width: 65%;
     padding-right: 1.2rem;
+    max-height: 500px;
     overflow: hidden;
 
 }
@@ -51,3 +52,17 @@
 
 }
 
+@include for-size('lg'){
+    .analysis-view{
+        flex-direction: column;
+    }
+    .table-inner{
+        width: 100%;
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+    }
+    .statistics{
+        width: 100%;
+    }
+
+}

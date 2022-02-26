@@ -63,3 +63,11 @@
     }
 
 }
+
+//css for phone
+@include for-size('sm'){
+    .click-toggle{
+        width: 20px;
+    }
+
+}

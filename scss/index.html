@@ -18,6 +18,8 @@
             <div class="header-brand row align-center logo justify-center">
                 <span class="icons icon-stop2"></span>
             </div>
+            <label for="header-expand" class="header-expand"><span class="icon-arrow_back"></span></label>
+            <input type="checkbox" id="header-expand">
             <div class="header-content row align-center space-between flex-grow-1">
                 <div class="search">
                     <div class="search-input row align-center">
@@ -27,7 +29,6 @@
                         <button class="button search-button" type="button">Search</button>
                     </div>
                 </div>
-                <input type="checkbox" id="header-expand">
                 <div class="header-profile row align-center">
                     <a href="#" class="notification nav-link-success">
                         <span class="icons icon-message"></span>
@@ -40,12 +41,13 @@
                     </figure>
                     <span class="icon-keyboard_arrow_down"></span>
                 </div>
-                    <label for="header-expand" class="header-expand"><span class="icon-arrow_back"></span></label>
             </div>
 
         </header>
 
         <!-- header:end -->
+        
+        <!-- main:start -->
         <div class="content-wrapper flex-grow-1 row overflow-hidden">
             <!-- sidebar:start -->
             <input type="checkbox" id="chekbox">
@@ -199,7 +201,7 @@
                 <!-- card-view-end -->
 
                 <!-- analysis-view-start -->
-                <div class="analysis-view row w-100">
+                <div class="analysis-view row w-100 overflow-hidden">
                     <!-- table:start -->
                     <div class="table-inner colum">
                         <div class="table-heading w-100">
@@ -265,12 +267,35 @@
                                         <td>10</td>
                                         <td>320</td>
                                     </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                    alt="user_profile"></figure>
+                                        </td>
+                                        <td class="product">News Mobile App Ui KIT f</td>
+                                        <td class="active">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <figure class="cell-profile"><img src="./assets/images/img_avatar.png"
+                                                    alt="user_profile"></figure>
+                                        </td>
+                                        <td class="product">News Mobile App Ui KIT f</td>
+                                        <td class="active">Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                        <!-- statistics:start -->
-                       <div class="statistics">
+                       <div class="statistics colum space-between">
+                           <div>
                         <div class="statistics-details row align-center space-between">
                             <h5 class="details">Views & Sells</h5>
                             <p class="week-options row align-center">this week <span
@@ -286,6 +311,7 @@
                                 <span class="icon-square"></span>
                                 <h5>Total Sells</h5>
                             </div>
+                        </div>
                         </div>
                         <!-- graph:start     -->
                         <div class="statistics-graph row">

@@ -3,6 +3,9 @@
     height: $header-height;
     background-color: $header-bg;
     border-bottom: $border-bottom;
+    .header-brand{
+        flex-shrink: 0;
+    }
     .header-content{
         padding: 1.3rem 2.5rem;
     }
@@ -25,6 +28,9 @@
         }
     }
     .header-profile{
+        @extend %transtion-all;
+    }
+    .search{
         @extend %transtion-all;
     }
     .search-input {
@@ -73,39 +79,23 @@
 //size max 991
 @include for-size('md'){
     .header{
-        .header-profile{
-            width: 0px;
-            overflow: hidden;
-            transition: all 0.7s ease;
-            
-        }
+    }
+    .header-content{
+        flex-direction: column;
+    }
 
-       .logo{
-            width: 50px;
-        }
-        .header-expand{
-            display: block;
-        }
-        .notification{           
-            .icons {
-                &::after{
-                   background-color: transparent;
-                }
-            }
-        }
-        //
-        #header-expand:checked ~.header-profile{
-            width: 100%;
-            overflow: unset;
-            .notification{           
-                .icons {
-                    &::after{
-                       background-color: $danger;
-                    }
-                }
-            }
+
+
+}
+
+//resposnsive for phone
+@include for-size('sm'){
+    .header{
+        .header-content{
+            padding: 1.3rem 2rem;
         }
     }
+
 }
 
     

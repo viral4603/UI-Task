@@ -13,6 +13,12 @@
 
     }
 }
+.table{
+    .table-heading td{
+        background-color: $white;
+        padding: 0px;
+    }
+}
 
 .table{
     color: $table-cell-color;
@@ -28,6 +34,9 @@
     th{
         width: 16%;
         padding: 0.75rem 0.75rem 0rem 0.75rem;
+    }
+    .product-name{
+        white-space: nowrap;
     }
    
 

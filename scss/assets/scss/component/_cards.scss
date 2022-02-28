@@ -1,7 +1,7 @@
 // Card styles goes here
 .card-wrapper {
     width: $card-width;
-    padding: 0 0.65rem;
+    padding: 0 0.65rem 1.3rem 0.65rem;
     .card {
         cursor: pointer;
         //card-icons
@@ -69,9 +69,7 @@
 @include for-size('lg'){
     .card-wrapper {
         width: 50%;
-        &:nth-child(1),&:nth-child(2){
-            margin-bottom: 1.3rem;
-        }
+       
     }
     
  
@@ -79,18 +77,24 @@
 //media query for below 768px
 
 @include for-size('md'){
+    .card-view{
+        margin: 0;
+    }
     .card-wrapper {
         width: 100%;
-        &:nth-child(1),&:nth-child(2){
-            margin-bottom: 1rem;
-        }
     }
  
 }
 @include for-size('sm'){
-    .card-wrapper {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
- 
+   body{
+       font-size: 0.8rem;
+   }
 }
+@include for-size('x-sm'){
+    .card-wrapper {
+        padding: 0 0.65rem 1rem 0.65rem;
+    }
+    .card-wrapper .card .card-counter{
+        font-size: 2rem;
+    }
+ }

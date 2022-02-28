@@ -15,7 +15,7 @@
 
 //card-view
 .card-view{
-    margin: 0rem -0.65rem 1.3rem;
+    margin: 0rem -0.65rem;
 }
 
 //statistics css here
@@ -83,7 +83,7 @@
 }
 @include for-size('xl'){
     .analysis-view{
-    overflow: hidden;
+    overflow: unset;
 }
 }
 @include for-size('lg'){
@@ -104,7 +104,16 @@
 //responsive for phone
 @include for-size('sm'){
     .main-content{
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
+}
+@include for-size("x-sm"){
+    .main-content{
+        padding: 1rem;
+        .title{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
 }

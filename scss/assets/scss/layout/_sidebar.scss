@@ -11,6 +11,8 @@
         align-items: center;
         justify-content: center;
         padding: $sidebar-items-padding;
+        @extend %transtion-all;
+
     }
     .icons {
         color: $icon-color;
@@ -40,6 +42,9 @@
 #chekbox:checked + .sidebar {
     width: 0;
     flex-basis: 0;
+    .nav-link{
+        transform: translateX(-50px);
+    }
 }
 #chekbox:checked + .sidebar ~ .click-toggle {
     left: 0;
@@ -48,10 +53,6 @@
     }
 }
 
-//responive css for sidebar
-@include for-size('xl'){
-  
-}
 //media query for below 992px
 @include for-size('lg'){
     //sidebar
@@ -68,6 +69,30 @@
 @include for-size('sm'){
     .click-toggle{
         width: 20px;
+        z-index: 9;
     }
 
+}
+
+//css for extra small phone
+@include for-size('x-sm'){
+    .sidebar{
+        position: absolute;
+        width: 50px;
+        z-index: 99;
+            
+    }
+    .sidebar .icons{
+        font-size: 1.4rem;
+    }
+    .main-content{
+        filter: blur(1px);
+        pointer-events: none;
+        
+    }
+    #chekbox:checked ~.main-content{
+        filter: blur(0);
+       pointer-events: all;
+        
+    }
 }

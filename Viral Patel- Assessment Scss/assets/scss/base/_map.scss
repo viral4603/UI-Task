@@ -1,0 +1,58 @@
+@each $name, $value in $theme-colors {
+    .text-#{$name} {
+      color: $value;
+    }
+  }
+
+@each $name,$value in $theme-colors {
+    .icon-#{$name}{
+      color: $value;
+      background-color: rgba($value,0.12);
+    }
+    //link-hover map
+    .sidebar{
+      .nav-link-#{$name}{
+        border-left: 0.18rem solid $white;
+        &:hover{
+          background-color: rgba($value,0.12);
+          border-left: 0.18rem solid $value;
+          .icon,h5{
+            color: $value;
+          }
+        }
+      }
+    }
+}
+
+
+//card hover
+@each $name,$value in $theme-colors{
+  .type-#{$name}{
+    color: $value;
+      background-color: rgba($value,0.12);
+  }
+  .card-wrapper{
+  .card-#{$name}{
+    &:hover{
+      background-color:$value;
+      .card-details{
+        .title,.count{
+          color: $white;
+        }
+      }
+      .card-icon{
+        color: $white;
+        background-color: rgba($white,0.12);
+      }
+    }
+  }
+}
+}
+
+//width diffrent class
+$width-size:("10":10%,"20":20%,"30":30%,"40":40%,"50":50%,"70":70%,"100":100%);
+@each $key,$value in $width-size {
+  .h-#{$key}{
+    height: $value;
+  }
+}

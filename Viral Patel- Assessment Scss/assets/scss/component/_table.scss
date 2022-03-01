@@ -1,0 +1,84 @@
+//table wrapper css
+.table-wrapper{
+    .sub-heading{
+        margin-bottom: 1.5rem;
+    }
+    
+}
+//table css
+.table-wrapper{
+    table{
+        border-collapse: separate;
+        border-spacing: 0rem 0.25rem;
+    }
+    th{
+        font-size: $font-size-base;
+        color: $text-primary;
+        font-weight: 400;
+    }
+    
+    td{
+        &.row{
+        font-weight: 500;
+        }
+        color: $text-secondary;
+    }
+    th,td{
+        text-align: left;
+        background-color: $white;
+        padding: 1rem 0.5rem;
+        width: 10%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:first-child{
+            width: 20%;
+            padding-left: 2rem;
+        }
+        &:nth-child(2){
+            width: 20%;
+        }
+    }
+    .type{
+        border-radius: $border-radius;
+        padding: 0.25rem 0.75rem;
+    }
+   
+   
+}
+//
+.table-heading{
+    overflow: auto;
+}
+.table-body{
+    max-height: 500px;
+    overflow: auto;
+    td.row{
+        white-space: nowrap;
+        width: 100%;
+    }
+    .product-image{
+        height: 30px;
+        width: 30px;
+        overflow: hidden;
+        img{
+            height: 25px;
+        }
+    }
+    .seller-image{
+        flex-shrink: 0;
+        height: 30px;
+        width: 50px;
+        overflow: hidden;
+    }
+}
+
+//responsive for tablet
+@include for-size('lg'){
+    .table-wrapper{
+        .sub-heading{
+            margin-bottom: 1rem;
+        }
+        
+    }
+}

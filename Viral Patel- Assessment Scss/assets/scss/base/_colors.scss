@@ -1,0 +1,44 @@
+//theme colors
+$text-primary:#4f5359;
+$text-secondary:#040818;
+$text-tertiary:#85838d;
+$bg-primary:#fafafa;
+$white:#ffffff;
+$primary:#4a98e6;
+$secondary:#00b11c;
+$success:#6967f9;
+$danger:#ed7e7d;
+$info:#20ad74;
+$warning:#f68a26;
+
+
+//icon-color
+$icon-color:#7f7f7f;
+//body-color
+$body-color:$text-primary;
+
+//border-color
+$border-color:#e7e6e9;
+
+//button-color
+$button-color:$white;
+
+//card
+$card-title-color:#6a6a72;
+$card-bg-color:$white;
+
+
+//create object colors
+$theme-colors: (
+  "text-primary": $text-primary,
+  "text-secondary": $text-secondary,
+  "text-tertiary":$text-tertiary,
+  "primary":$primary,
+  "secondary":$secondary,
+  "success":$success,
+  "danger":$danger,
+  "info":$info,
+  "warning":$warning,
+);
+
+

@@ -1,0 +1,32 @@
+// All the SCSS Variables goes here
+
+// Fonts
+$font-size-base: 1rem;
+$font-family: 'Poppins', sans-serif;;
+$font-bold: 500;
+$font-weight-normal:400;
+
+//Radious
+$border-radius:0.5rem;
+$border-bottom:0.01rem solid $border-color;
+$circle-radius:50%;
+
+//Header
+$header-height:90px;
+$header-padding:0rem 1.2rem;
+$icon-size:1.2rem;
+
+//padiing
+$padding-base:2rem;
+
+//card
+$card-width:16.66%;
+$card-padding-base:1.2rem;
+$card-icon-height:60px;
+$card-icon-width:60px;
+$card-icon-bottom:1.2rem;
+$card-icon-font:$icon-size;
+
+$card-title:$font-size-base;
+$card-title-weight:$font-weight-normal;
+$card-margin-bottom:1rem;

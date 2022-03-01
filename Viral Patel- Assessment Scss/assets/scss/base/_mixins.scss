@@ -1,0 +1,45 @@
+// All the SCSS mixins goes here
+
+//create mixin or position
+@mixin position($type, $top: "auto", $right: "auto", $bottom: "auto", $left: "auto") {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//mixing boder
+@mixin border($type, $width, $color) {
+  border: $type $width $color;
+}
+
+//responisve mixing
+
+@mixin for-size($size) {
+  @if $size == xxl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == md {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  } @else if $size == x-sm {
+    @media only screen and (max-width: 420px) {
+      @content;
+    }
+  }
+}

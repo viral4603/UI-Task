@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scss Assissetment</title>
+    <link rel="stylesheet" href="./assets/icons/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper h-100 w-100 colum overflow-hidden">
+        <!-- header:start -->
+        <input type="checkbox" id="sidebar-expand">
+
+        <header class="header row align-center">
+            <div class="header-brand row align-center logo space-between">
+                <h1 class="heading text-text-secondary">Tallyscan</h1>
+                <label for="sidebar-expand" class="menu-icon"><span class="brand-icon icon-lines"></span></label>
+            </div>
+            <div class="header-content row align-center space-between flex-grow-1">
+                <h3 class="sub-heading text-text-secondary">Dashboard</h3>
+                <div class="header-profile row align-center">
+                    <input type="checkbox" id="profile-toggle">
+                    <a href="#" class="notification nav-link-secondary">
+                        <span class="icons icon-bell"></span>
+                    </a>
+                    <figure class="avtar overflow-hidden row align-center">
+                        <img src="./assets/images/img_avatar.png" alt="user_profile">
+                    </figure>
+                    <h5 class="text-text-primary user-name">John Smith</h5>
+                    <label for="profile-toggle" class="arrow"><span class="icons icon-arrow_down"></span></label>
+                </div>
+            </div>
+
+        </header>
+        <!-- header:end -->
+
+        <!-- main:start -->
+        <div class="content-wrapper flex-grow-1 row overflow-hidden">
+            <!-- sidebar:start -->
+            <aside class="sidebar colum overflow-hidden">
+                <ul class="list-general vertical-scroll">
+                    <h4 class="sidebar-details">GENERAL</h4>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-success row"><span class="icon icon-search"></span>
+                            <h5>Search</h5>
+                        </a></li>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-secondary row"><span class="icon icon-bell"></span>
+                            <h5>Alert</h5>
+                        </a></li>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-success row"><span class="icon icon-tag"></span>
+                            <h5>Tags</h5>
+                        </a></li>
+                </ul>
+                <ul class="list-others  vertical-scroll">
+                    <h4 class="sidebar-details">OTHERS</h4>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-danger row"><span class="icon icon-settings"></span>
+                            <h5>Setting</h5>
+                        </a></li>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-warning row"><span class="icon icon-tips"></span>
+                            <h5>Tips</h5>
+                        </a></li>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-info row"><span class="icon icon-trash"></span>
+                            <h5>Trash</h5>
+                        </a></li>
+                    <li class="list-items"><a href="#" class="nav-link nav-link-primary row"><span class="icon icon-sign-out"></span>
+                            <h5>Logout</h5>
+                        </a></li>
+                </ul>
+            </aside>
+            <!-- sidebar:end    -->
+
+            <!-- main-display-content:start -->
+            <div class="main-content flex-grow-1 colum">
+                <!-- button:start -->
+                <div class="filter-button row justify-end">
+                    <button class="button"><span class="icon icon-filter"></span> Filter</button>
+                </div>
+                <!-- button:end -->
+
+                <!-- card-view:start -->
+                <div class="card-display row">
+                    <!-- card-1:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-text-secondary">
+                            <div class="card-details colum">
+                                <h5 class="title">Scan</h5>
+                                <h4 class="count">350</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-text-secondary"><span class="icon-barcode"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-1:end -->
+
+                    <!-- card-2:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-primary">
+                            <div class="card-details colum">
+                                <h5 class="title">List</h5>
+                                <h4 class="count">350</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-primary"><span class="icon-list"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-2:end -->
+
+                    <!-- card-3:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-info">
+                            <div class="card-details colum">
+                                <h5 class="title">Cost</h5>
+                                <h4 class="count">$345</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-info"><span class="icon-money-bag"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-3:end -->
+
+                    <!-- card-4:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-warning">
+                            <div class="card-details colum">
+                                <h5 class="title">Buy Now</h5>
+                                <h4 class="count">350</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-warning"><span class="icon-cart"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-4:end -->
+
+                    <!-- card-5:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-success">
+                            <div class="card-details colum">
+                                <h5 class="title">Buy Cheaper</h5>
+                                <h4 class="count">350</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-success"><span class="icon-dollar"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-5:end -->
+
+                    <!-- card-6:start -->
+                    <div class="card-wrapper">
+                        <div class="card-inner row space-between card-danger">
+                            <div class="card-details colum">
+                                <h5 class="title">Buy Healthier</h5>
+                                <h4 class="count">350</h4>
+                            </div>
+                            <div class="card-icon row align-center justify-center icon-danger"><span class="icon-heartbeat"></span></div>
+                        </div>
+                    </div>
+                    <!-- card-6:end -->
+
+                </div>
+                <!-- card-view:end -->
+
+                <!-- table-wrapper -->
+                <div class="table-wrapper w-100">
+                    <h3 class="sub-heading text-text-secondary">
+                        Recent Activity
+                    </h3>
+                    <!-- table:start -->
+                    <div class="table-wrapper">
+                        <div class="table-heading w-100">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Item <span class="icon-arrow_down"></span></th>
+                                        <th>Date<span class="icon-arrow_down"></span></th>
+                                        <th>Type<span class="icon-arrow_down"></span></th>
+                                        <th>Est.Cost<span class="icon-arrow_down"></span></th>
+                                        <th>Last<span class="icon-arrow_down"></span></th>
+                                        <th>List<span class="icon-arrow_down"></span></th>
+                                        <th>Auto<span class="icon-arrow_down"></span></th>
+                                        <th>Buy Now<span class="icon-arrow_down"></span></th>
+                                    </tr>
+                                </thead>
+                            </table>                          
+                        </div>
+                        <div class="table-body w-100">
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td ><span class="type type-danger">Discarded</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="seller-image"><img src="./assets/images/seller-image.png" alt="seller-image"></figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-info">Want</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="seller-image"><img src="./assets/images/seller-image.png" alt="seller-image"></figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-warning">Waiting</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                           N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-danger">Discarded</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="seller-image"><img src="./assets/images/seller-image.png" alt="seller-image"></figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-info">Want</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-danger">Discarded</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                          N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-warning">Waiting</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="seller-image"><img src="./assets/images/seller-image.png" alt="seller-image"></figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row">
+                                            <figure class="product-image"><img src="./assets/images/product-image.png" alt="product-image"></figure><p>skippy Penut Butter 160z</p>
+                                        </td>
+                                        <td>07 Nov,8:35pm</td>
+                                        <td><span class="type type-danger">Discarded</span></td>
+                                        <td>$40.7</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                           N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      
+                    </div>
+                    <!-- table:end -->
+
+                </div>
+
+            </div>
+            <!-- main-display-content:end -->
+        </div>
+        <!-- main:end -->
+    </div>
+
+    </div>
+</body>
+
+</html>

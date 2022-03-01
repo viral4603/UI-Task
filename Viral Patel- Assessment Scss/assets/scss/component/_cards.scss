@@ -1,0 +1,78 @@
+//card css
+
+.card-display{
+    margin: 0rem -0.75rem;
+    flex-wrap: wrap;
+}
+.card-wrapper {
+    width: $card-width;
+    padding: 0rem 0.75rem 1.5rem 0.75rem;
+    .card-inner{
+        cursor: pointer;
+        padding: 1.2rem;
+        background-color: $white;
+        border-radius: $border-radius;
+        @extend %transtion-all;
+        .title{
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: $card-title-color;
+            @extend %transtion-all;
+        }
+        .count{
+            font-size: 1.5rem;
+            font-weight:500;
+            color: $text-secondary;
+            @extend %transtion-all;
+        }
+    }
+    .card-icon{
+        height: 50px;
+        width: 50px;
+        border-radius: $circle-radius;
+        @extend %transtion-all;
+        span{
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+
+//responsive for laptop
+@include for-size('xl'){
+    .card-wrapper{
+        width: 33.33%;
+    }
+}
+
+//tablet
+@include for-size('lg'){
+    .card-wrapper{
+        .card-inner .count{
+            font-size: 1.25rem;
+        }
+        .card-icon{
+            height: 40px;
+            width: 40px;
+            span{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+//phone 
+@include for-size('md'){
+    .card-wrapper{
+        width: 50%;
+    }
+}
+
+//small-phone
+@include for-size('sm'){
+    .card-wrapper{
+        width: 100%;
+    }
+}

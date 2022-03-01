@@ -1,0 +1,81 @@
+.sidebar {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    background-color: $white;
+    padding: 1.5rem 0rem;
+    position: relative;
+    overflow: hidden;
+    @extend %transtion-all;
+    .sidebar-details {
+        font-size: $font-size-base;
+        font-weight: 500;
+        color: $text-secondary;
+        padding: 0rem 1.5rem;
+        @extend %transtion-all;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        @extend %transtion-all;
+        .icon {
+            padding-right: 1rem;
+            font-weight: 600;
+        }
+        h5 {
+            font-size:$font-size-base;
+            font-weight: 400;
+            color: $text-primary;
+            @extend %transtion-all;
+        }
+    }
+    .icon {
+        color: $icon-color;
+        font-size: $icon-size;
+        @extend %transtion-all;
+    }
+    .list-general {
+        padding-bottom: 2rem;
+    }
+}
+#sidebar-expand:checked ~ .content-wrapper {
+    .sidebar {
+        flex-basis: 80px;
+        .sidebar-details {
+            padding: 0rem 0.25rem;
+        }
+        h5 {
+            transform: translateX(100px);
+        }
+    }
+}
+
+//for phone
+@include for-size("md") {
+    .sidebar {
+        position: absolute;
+        top: 67px;
+        left: -250px;
+        width: 200px;
+        bottom: 0;
+        z-index: 99;
+    }
+    #sidebar-expand:checked ~ .content-wrapper {
+        .sidebar {
+            left: 0px;
+            h5 {
+                transform: translateX(0px);
+            }
+            .sidebar-details {
+                padding: 0rem 1.5rem;
+            }
+        }
+    }
+}
+
+@include for-size("sm"){
+    .sidebar {
+        top: 74px;
+    }
+}

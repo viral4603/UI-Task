@@ -1,0 +1,140 @@
+//header css
+.header {
+    height: 80px;
+    border-bottom: 0.1rem solid $border-color;
+    background-color: $white;
+    .toggle-icon,
+    #header-expand {
+        display: none;
+    }
+    .header-brand {
+        flex-basis: 250px;
+        flex-shrink: 0;
+        padding: 0rem 1.5rem;
+        @extend %transtion-all;
+        .heading,
+        .brand-icon {
+            font-size: 1.5rem;
+            font-weight: 500;
+            @extend %transtion-all;
+        }
+        .menu-icon {
+            margin-top: 0.75rem;
+        }
+    }
+    .header-content {
+        padding: 1rem 2rem;
+    }
+    .notification {
+        margin-right: 2rem;
+    }
+    .avtar {
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+        border-radius: $circle-radius;
+        overflow: hidden;
+    }
+    .menu-icon,
+    .arrow {
+        cursor: pointer;
+    }
+}
+#sidebar-expand,
+#profile-toggle {
+    display: none;
+}
+#sidebar-expand:checked ~ .header {
+    .header-brand {
+        flex-basis: 80px;
+    }
+    .heading {
+        display: none;
+        transform: translateX(-140px);
+    }
+}
+
+//responsive phone
+@include for-size("md") {
+    .header {
+        .header-brand {
+            flex-basis: 50px;
+        }
+        .notification {
+            margin-right: 1rem;
+            .icons {
+                font-size: 1.25rem;
+            }
+        }
+        .avtar {
+            margin-right: 0.75rem;
+            height: 30px;
+            width: 30px;
+        }
+        .header-profile {
+            overflow: hidden;
+            .notification,
+            .avtar,
+            .user-name {
+                transform: translateX(200px);
+                transition: all 0.4s;
+            }
+        }
+        .arrow span {
+            display: block;
+            transform: rotate(90deg);
+        }
+        .heading {
+            display: none;
+        }
+    }
+    #profile-toggle:checked ~ {
+        .notification,
+        .avtar,
+        .user-name {
+            transform: translateX(0px);
+        }
+        .arrow span {
+            display: block;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+//for phone
+@include for-size("md") {
+    #sidebar-expand:checked ~ .header {
+        .header-brand {
+            flex-basis: 200px;
+        }
+        .heading {
+            display: block;
+            font-size: 1.5rem;
+            transform: translateX(0px);
+        }
+    }
+    #sidebar-expand:checked ~ .content-wrapper {
+        .main-content {
+            filter: blur(1px);
+            pointer-events: none;
+        }
+    }
+}
+
+//form small size phone
+@include for-size("x-sm") {
+    .header {
+        .header-content {
+            .sub-heading {
+                font-size: 1.25rem;
+                margin-left: -50px;
+            }
+            
+        }
+        .header-brand{
+            .menu-icon{
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
